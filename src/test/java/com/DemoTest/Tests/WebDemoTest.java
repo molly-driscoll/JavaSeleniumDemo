@@ -37,6 +37,11 @@ public class WebDemoTest extends TestBase {
         
         this.annotate("Login Locked out user Test..");
         Boolean returnedvalue = page.LoginLockedoutUser("locked_out_user", "secret_sauce");
+        
+        // 
+        this.annotate("Login Performance Glitch user Test..");
+        Boolean returnedvalueglitch = page.LoginPerfGlitchUser("performance_glitch_user", "secret_sauce");
+        
 
 
         this.annotate("Asserting that we are on a new page...");
