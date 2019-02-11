@@ -11,8 +11,10 @@
     <classes>
       <class name="com.DemoTest.Tests.WebDemoTest">
         <methods>
+          <include name="LoginPerfGlitchUser" invocation-numbers="2 0 3"/>
           <include name="tearDown"/>
-          <include name="LoginTest" invocation-numbers="0 2 3"/>
+          <include name="LoginLockedoutUser" invocation-numbers="2 6 0 5 4 1 3"/>
+          <include name="Login" invocation-numbers="2 0 3"/>
         </methods>
       </class> <!-- com.DemoTest.Tests.WebDemoTest -->
     </classes>

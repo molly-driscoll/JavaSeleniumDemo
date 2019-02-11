@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="3" name="TestSuite" time="236.833" errors="0" skipped="0">
+<testsuite tests="21" failures="13" name="TestSuite" time="577.325" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.2+9-LTS"/>
@@ -25,7 +25,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/ianflanagan/Workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf16490485941889909640.tmp"/>
+    <property name="classworlds.conf" value="/Users/ianflanagan/Workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf5990616662487000222.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/ianflanagan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="jdk.debug" value="release"/>
@@ -62,124 +62,349 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginTest" time="25.81">
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Login" time="15.086">
     <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:179)
-	at com.DemoTest.Tests.WebDemoTest.LoginTest(WebDemoTest.java:43)
+	at com.DemoTest.Tests.WebDemoTest.Login(WebDemoTest.java:40)
 </failure>
     <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@35d176f7
-Starting login function nowEnter username: standard_userEnter Password: secret_sauceClick Login buttonStarting login function nowEnter username: standard_userEnter Password: secret_sauceClick Login buttonStarting login function nowEnter username: standard_userStarting login function nowEnter username: standard_userEnter Password: secret_sauceEnter Password: secret_sauceClick on Hamburger iconClick Login buttonClick Login buttonClick on Hamburger iconPerforming validationStarting login function nowEnter username: standard_userClick on Hamburger iconEnter Password: secret_sauceStarting login function nowEnter username: standard_userClick Login buttonClick on Hamburger iconCan&apos;t execute login function: org.openqa.selenium.NoSuchElementException: Unable to find element with id == user-name (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 296 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;SAUCE-M5KOC5RP6&apos;, ip: &apos;10.100.14.105&apos;, os.name: &apos;Windows Server 2008 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=about:blank, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX3e281747
-*** Element info: {Using=id, value=user-name}
-Command duration or timeout: 825 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{enablePersistentHover=true, ie.fileUploadDialogTimeout=3000, platform=WINDOWS, ie.ensureCleanSession=false, ie.browserCommandLineSwitches=, requireWindowFocus=false, takesScreenshot=true, browserName=internet explorer, javascriptEnabled=true, unexpectedAlertBehaviour=dismiss, browserAttachTimeout=0, ie.enableFullPageScreenshot=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, hasMetadata=true, version=11, nativeEvents=true, elementScrollBehavior=0, webdriver.remote.sessionid=cb3e8a8bbde24bd1a7193cc68c19aacf, initialBrowserUrl=about:blank, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true}]
-Session ID: cb3e8a8bbde24bd1a7193cc68c19aacf
-*** Element info: {Using=id, value=user-name}Starting Login Locked out User function nowEnter username: locked_out_userPerforming validationLogin Passed
-Starting Login Locked out User function nowEnter username: locked_out_userCan&apos;t execute login Locked out User function: org.openqa.selenium.NoSuchElementException: Unable to find element with id == user-name (WARNING: The server did not provide any stacktrace information)
+Starting login function nowEnter username: standard_userStarting login function nowEnter username: standard_userStarting login function nowEnter username: standard_userEnter Password: secret_sauceCan&apos;t execute login function: org.openqa.selenium.NoSuchElementException: Unable to find element with id == user-name (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 297 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;SAUCE-M5KOC5RP6&apos;, ip: &apos;10.100.14.105&apos;, os.name: &apos;Windows Server 2008 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+System info: host: &apos;SAUCE-M5KOC5RP6&apos;, ip: &apos;172.20.49.203&apos;, os.name: &apos;Windows Server 2008 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=about:blank, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX3e281747
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXbde9819a
 *** Element info: {Using=id, value=user-name}
-Command duration or timeout: 1.90 seconds
+Command duration or timeout: 944 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{enablePersistentHover=true, ie.fileUploadDialogTimeout=3000, platform=WINDOWS, ie.ensureCleanSession=false, ie.browserCommandLineSwitches=, requireWindowFocus=false, takesScreenshot=true, browserName=internet explorer, javascriptEnabled=true, unexpectedAlertBehaviour=dismiss, browserAttachTimeout=0, ie.enableFullPageScreenshot=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, hasMetadata=true, version=11, nativeEvents=true, elementScrollBehavior=0, webdriver.remote.sessionid=cb3e8a8bbde24bd1a7193cc68c19aacf, initialBrowserUrl=about:blank, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true}]
-Session ID: cb3e8a8bbde24bd1a7193cc68c19aacf
-*** Element info: {Using=id, value=user-name}Performing validationCan&apos;t execute login function: org.openqa.selenium.NoSuchElementException: Could not find element: {&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button&quot;} (WARNING: The server did not provide any stacktrace information)
+Capabilities [{enablePersistentHover=true, ie.fileUploadDialogTimeout=3000, platform=WINDOWS, ie.ensureCleanSession=false, ie.browserCommandLineSwitches=, requireWindowFocus=false, takesScreenshot=true, browserName=internet explorer, javascriptEnabled=true, unexpectedAlertBehaviour=dismiss, browserAttachTimeout=0, ie.enableFullPageScreenshot=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, hasMetadata=true, version=11, nativeEvents=true, elementScrollBehavior=0, webdriver.remote.sessionid=b03e85c03c364942913c007d9bb2a5bc, initialBrowserUrl=about:blank, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true}]
+Session ID: b03e85c03c364942913c007d9bb2a5bc
+*** Element info: {Using=id, value=user-name}Enter Password: secret_sauce</system-out>
+  </testcase>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Login" time="21.742">
+    <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.DemoTest.Tests.WebDemoTest.Login(WebDemoTest.java:40)
+</failure>
+    <system-out>Starting login function nowEnter username: standard_userClick Login buttonStarting login function nowEnter username: standard_userStarting login function nowEnter username: standard_userEnter Password: secret_sauceEnter Password: secret_sauceClick Login buttonClick Login buttonClick on Hamburger iconClick Login buttonStarting login function nowEnter username: standard_userEnter Password: secret_sauceClick on Hamburger iconCan&apos;t execute login function: org.openqa.selenium.NoSuchElementException: No such element (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.34.132&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, pageLoadStrategy=normal, takesElementScreenshot=true, platformName=windows, platform=ANY}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX0BB63142
+*** Element info: {Using=id, value=user-name}
+Command duration or timeout: 1.22 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, hasMetadata=true, platform=ANY, acceptSslCerts=true, webdriver.remote.sessionid=5b46c49802cf444585d1bdd3bdaf2890, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=MicrosoftEdge, javascriptEnabled=true, takesElementScreenshot=true, platformName=windows, cssSelectorsEnabled=true}]
+Session ID: 5b46c49802cf444585d1bdd3bdaf2890
+*** Element info: {Using=id, value=user-name}</system-out>
+  </testcase>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Login" time="22.756">
+    <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.DemoTest.Tests.WebDemoTest.Login(WebDemoTest.java:40)
+</failure>
+    <system-out>Can&apos;t execute login function: org.openqa.selenium.NoSuchElementException: Could not find element: {&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button&quot;} (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 6 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.48.0&apos;, revision: &apos;b7b081a&apos;, time: &apos;2015-10-07 15:48:56&apos;
-System info: host: &apos;itako2858.prod.miso&apos;, ip: &apos;10.125.10.15&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_102&apos;
+System info: host: &apos;itako44238.prod.miso&apos;, ip: &apos;172.20.44.238&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_102&apos;
 Driver info: org.openqa.selenium.safari.SafariDriver
 Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=10.0.1, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
 Session ID: null
 *** Element info: {Using=css selector, value=#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button}
-Command duration or timeout: 233 milliseconds
+Command duration or timeout: 378 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{webdriver.remote.sessionid=38e77b10e9164fa1b1e79592eace5cef, takesScreenshot=true, browserName=safari, javascriptEnabled=true, hasMetadata=true, version=10.0.1, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
-Session ID: 38e77b10e9164fa1b1e79592eace5cef
-*** Element info: {Using=css selector, value=#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button}Starting Login Locked out User function nowEnter username: locked_out_userEnter Password: secret_sauceClick on Hamburger iconClick Login buttonStarting login function nowEnter username: standard_userLogin Passed
-Starting Login Locked out User function nowEnter username: locked_out_userCan&apos;t execute login function: org.openqa.selenium.NoSuchElementException: No such element (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.58.137&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities [{applicationCacheEnabled=true, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, pageLoadStrategy=normal, takesElementScreenshot=true, platformName=windows, platform=ANY}]
-Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXA6A1F430
-*** Element info: {Using=id, value=user-name}
-Command duration or timeout: 714 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, hasMetadata=true, platform=ANY, acceptSslCerts=true, webdriver.remote.sessionid=39ee0ec2fc1641e09d4ec08cbef87a36, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=MicrosoftEdge, javascriptEnabled=true, takesElementScreenshot=true, platformName=windows, cssSelectorsEnabled=true}]
-Session ID: 39ee0ec2fc1641e09d4ec08cbef87a36
-*** Element info: {Using=id, value=user-name}Starting Login Locked out User function nowEnter username: locked_out_userCan&apos;t execute login Locked out User function: org.openqa.selenium.NoSuchElementException: No such element (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
-System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.58.137&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities [{applicationCacheEnabled=true, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, pageLoadStrategy=normal, takesElementScreenshot=true, platformName=windows, platform=ANY}]
-Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXA6A1F430
-*** Element info: {Using=id, value=user-name}
-Command duration or timeout: 282 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, hasMetadata=true, platform=ANY, acceptSslCerts=true, webdriver.remote.sessionid=39ee0ec2fc1641e09d4ec08cbef87a36, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=MicrosoftEdge, javascriptEnabled=true, takesElementScreenshot=true, platformName=windows, cssSelectorsEnabled=true}]
-Session ID: 39ee0ec2fc1641e09d4ec08cbef87a36
-*** Element info: {Using=id, value=user-name}Enter Password: secret_sauceLogin Passed
-</system-out>
+Capabilities [{webdriver.remote.sessionid=0cdeb58c3fbe41dd85e46c5f389b8f6f, takesScreenshot=true, browserName=safari, javascriptEnabled=true, hasMetadata=true, version=10.0.1, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: 0cdeb58c3fbe41dd85e46c5f389b8f6f
+*** Element info: {Using=css selector, value=#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button}Click Login button</system-out>
   </testcase>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginTest" time="27.998">
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Login" time="29.462"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Login" time="30.957"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Login" time="33.715"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Login" time="38.605"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginLockedoutUser" time="17.929">
     <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:179)
-	at com.DemoTest.Tests.WebDemoTest.LoginTest(WebDemoTest.java:43)
+	at com.DemoTest.Tests.WebDemoTest.LoginLockedoutUser(WebDemoTest.java:65)
 </failure>
-    <system-out>Enter Password: secret_sauceClick Login buttonClick Login buttonStarting Login Locked out User function nowEnter username: locked_out_userEnter Password: secret_saucePerforming validationClick Login button</system-out>
+    <system-out>Starting Login Locked out User function nowEnter username: locked_out_userEnter Password: secret_sauceClick Login buttonStarting Login Locked out User function nowEnter username: locked_out_userStarting Login Locked out User function nowEnter username: locked_out_userEnter Password: secret_sauceEnter Password: secret_sauceClick Login buttonClick Login buttonStarting Login Locked out User function nowEnter username: locked_out_userStarting Login Locked out User function nowEnter username: locked_out_userClick on Hamburger iconEnter Password: secret_sauceClick Login buttonCan&apos;t execute login Locked out User function: org.openqa.selenium.NoSuchElementException: Unable to find element with id == user-name (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 312 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;SAUCE-M5KOC5RP6&apos;, ip: &apos;172.20.34.7&apos;, os.name: &apos;Windows Server 2008 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=about:blank, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXf9de0d56
+*** Element info: {Using=id, value=user-name}
+Command duration or timeout: 3.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{enablePersistentHover=true, ie.fileUploadDialogTimeout=3000, platform=WINDOWS, ie.ensureCleanSession=false, ie.browserCommandLineSwitches=, requireWindowFocus=false, takesScreenshot=true, browserName=internet explorer, javascriptEnabled=true, unexpectedAlertBehaviour=dismiss, browserAttachTimeout=0, ie.enableFullPageScreenshot=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, hasMetadata=true, version=11, nativeEvents=true, elementScrollBehavior=0, webdriver.remote.sessionid=d1d3cc4dec964924bce14b677d3901ac, initialBrowserUrl=about:blank, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true}]
+Session ID: d1d3cc4dec964924bce14b677d3901ac
+*** Element info: {Using=id, value=user-name}</system-out>
   </testcase>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginTest" time="34.798"/>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginTest" time="34.905"/>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginTest" time="34.984">
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginLockedoutUser" time="18.89">
     <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:179)
-	at com.DemoTest.Tests.WebDemoTest.LoginTest(WebDemoTest.java:43)
+	at com.DemoTest.Tests.WebDemoTest.LoginLockedoutUser(WebDemoTest.java:65)
+</failure>
+    <system-out>Click on Hamburger iconClick on Hamburger iconCan&apos;t execute login Locked out User function: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button&quot;}
+  (Session info: chrome=47.0.2526.73)
+  (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Linux 3.13.0-83-generic x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 161 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4), userDataDir=/tmp/.com.google.Chrome.8YYK30}, takesHeapSnapshot=true, hasMetadata=true, databaseEnabled=false, hasTouchScreen=false, handlesAlerts=true, version=47.0.2526.73, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=cc1538a4abc84615b51e1e1808073b10, webStorageEnabled=true, locationContextEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: cc1538a4abc84615b51e1e1808073b10
+*** Element info: {Using=css selector, value=#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button}</system-out>
+  </testcase>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginLockedoutUser" time="21.107">
+    <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.DemoTest.Tests.WebDemoTest.LoginLockedoutUser(WebDemoTest.java:65)
+</failure>
+    <system-out>Click on Hamburger iconStarting Login Locked out User function nowEnter username: locked_out_userCan&apos;t execute login Locked out User function: org.openqa.selenium.NoSuchElementException: No such element (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.50.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, pageLoadStrategy=normal, takesElementScreenshot=true, platformName=windows, platform=ANY}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX7D41B6DD
+*** Element info: {Using=id, value=user-name}
+Command duration or timeout: 789 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, hasMetadata=true, platform=ANY, acceptSslCerts=true, webdriver.remote.sessionid=d4b70b72366b45b0a480defe7aa9d618, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=MicrosoftEdge, javascriptEnabled=true, takesElementScreenshot=true, platformName=windows, cssSelectorsEnabled=true}]
+Session ID: d4b70b72366b45b0a480defe7aa9d618
+*** Element info: {Using=id, value=user-name}</system-out>
+  </testcase>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginLockedoutUser" time="22.048">
+    <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.DemoTest.Tests.WebDemoTest.LoginLockedoutUser(WebDemoTest.java:65)
+</failure>
+    <system-out>Can&apos;t execute login Locked out User function: org.openqa.selenium.NoSuchElementException: Unable to locate element: #menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;WIN-R1JBAO1CNPS&apos;, ip: &apos;10.100.18.103&apos;, os.name: &apos;Windows Server 2008 R2&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.LDoLO8ny7o7F, rotatable=false, moz:geckodriverVersion=0.23.0, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=64.0, moz:shutdownTimeout=60000.0, platformVersion=6.1, moz:processID=1872.0, browserName=firefox, javascriptEnabled=true, platformName=windows, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX0970a415
+*** Element info: {Using=css selector, value=#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button}
+Command duration or timeout: 497 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{moz:profile=C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.LDoLO8ny7o7F, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, moz:geckodriverVersion=0.23.0, unhandledPromptBehavior=dismiss and notify, pageLoadStrategy=normal, hasMetadata=true, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, webdriver.remote.sessionid=229967ce6fe94bb6b3905218fb87b1a2, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, platformVersion=6.1, moz:shutdownTimeout=60000, browserVersion=64.0, moz:processID=1872, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, platformName=windows, cssSelectorsEnabled=true, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: 229967ce6fe94bb6b3905218fb87b1a2
+*** Element info: {Using=css selector, value=#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button}Can&apos;t execute login Locked out User function: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button&quot;}
+  (Session info: chrome=54.0.2840.59)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Mac OS X 10.10.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 341 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=/var/folders/5n/qvrkkll11sg_5xwc5_qcx4c40000kr/T/.org.chromium.Chromium.cnD2CR}, takesHeapSnapshot=true, pageLoadStrategy=normal, hasMetadata=true, hasTouchScreen=false, handlesAlerts=true, databaseEnabled=false, version=54.0.2840.59, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=c79fdccf3a724181999a422205720c6b, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: c79fdccf3a724181999a422205720c6b
+*** Element info: {Using=css selector, value=#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button}</system-out>
+  </testcase>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginLockedoutUser" time="22.16">
+    <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.DemoTest.Tests.WebDemoTest.LoginLockedoutUser(WebDemoTest.java:65)
 </failure>
   </testcase>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginTest" time="37.596"/>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginTest" time="40.742"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginLockedoutUser" time="23.892">
+    <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.DemoTest.Tests.WebDemoTest.LoginLockedoutUser(WebDemoTest.java:65)
+</failure>
+    <system-out>Can&apos;t execute login Locked out User function: org.openqa.selenium.NoSuchElementException: Unable to locate element: #menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;WIN-SB3ER6JQ6ME&apos;, ip: &apos;10.100.21.32&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.MarionetteDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, webdriver.remote.quietExceptions=false, appBuildId=20160916101415, moz:firefoxOptions={args=[-start-debugger-server, 9222]}, version=49.0, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=2852, browserVersion=49.0, platformVersion=10.0, XULappId={XXXXXXXX-XXXX-XXXX-XXXX-XXXXa9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop, firefox_profile=UEsDBBQAAAAIABGbS076Qgy8ehoAA...}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX96b760a9
+*** Element info: {Using=css selector, value=#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button}
+Command duration or timeout: 564 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{raisesAccessibilityExceptions=false, marionette=true, webdriver.remote.quietExceptions=false, moz:firefoxOptions={args=[-start-debugger-server, 9222]}, appBuildId=20160916101415, platform=XP, specificationLevel=0, acceptSslCerts=false, processId=2852, platformVersion=10.0, browserVersion=49.0, takesScreenshot=true, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, rotatable=false, hasMetadata=true, version=49.0, proxy={}, command_id=1, webdriver.remote.sessionid=37cc3d627069416293ec60ac257b771c, takesElementScreenshot=true, device=desktop, cssSelectorsEnabled=true, firefox_profile=UEsDBBQAAAAIABGbS076Qgy8ehoAA...}]
+Session ID: 37cc3d627069416293ec60ac257b771c
+*** Element info: {Using=css selector, value=#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button}</system-out>
+  </testcase>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginLockedoutUser" time="74.569">
+    <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.DemoTest.Tests.WebDemoTest.LoginLockedoutUser(WebDemoTest.java:65)
+</failure>
+    <system-out>Starting Login Locked out User function nowEnter username: locked_out_userEnter Password: secret_sauceClick Login buttonClick on Hamburger iconCan&apos;t execute login Locked out User function: org.openqa.selenium.NoSuchElementException: Could not find element: {&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button&quot;} (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.0&apos;, revision: &apos;b7b081a&apos;, time: &apos;2015-10-07 15:48:56&apos;
+System info: host: &apos;itako47119.prod.miso&apos;, ip: &apos;172.20.47.119&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=10.0.1, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null
+*** Element info: {Using=css selector, value=#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button}
+Command duration or timeout: 307 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{webdriver.remote.sessionid=21bba8de9d1d4253b95a18901ca7e967, takesScreenshot=true, browserName=safari, javascriptEnabled=true, hasMetadata=true, version=10.0.1, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: 21bba8de9d1d4253b95a18901ca7e967
+*** Element info: {Using=css selector, value=#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button}</system-out>
+  </testcase>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginPerfGlitchUser" time="20.204">
+    <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.DemoTest.Tests.WebDemoTest.LoginPerfGlitchUser(WebDemoTest.java:90)
+</failure>
+    <system-out>Starting Login Performance Glitch User function nowEnter username: performance_glitch_userEnter Password: secret_sauceClick Login buttonStarting Login Performance Glitch User function nowEnter username: performance_glitch_userEnter Password: secret_sauceClick Login buttonStarting Login Performance Glitch User function nowEnter username: performance_glitch_userStarting Login Performance Glitch User function nowEnter username: performance_glitch_userEnter Password: secret_sauceClick Login buttonStarting Login Performance Glitch User function nowEnter username: performance_glitch_userEnter Password: secret_sauceClick on Hamburger iconStarting Login Performance Glitch User function nowEnter username: performance_glitch_userClick Login buttonStarting Login Performance Glitch User function nowEnter username: performance_glitch_userCan&apos;t execute login Performance Glitch User function: org.openqa.selenium.NoSuchElementException: No such element (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;sauce-win10&apos;, ip: &apos;172.20.60.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, pageLoadStrategy=normal, takesElementScreenshot=true, platformName=windows, platform=ANY}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXEE63723D
+*** Element info: {Using=id, value=user-name}
+Command duration or timeout: 763 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, hasMetadata=true, platform=ANY, acceptSslCerts=true, webdriver.remote.sessionid=77e08c6a4fb04fa5a94b31aa7fedaa48, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=MicrosoftEdge, javascriptEnabled=true, takesElementScreenshot=true, platformName=windows, cssSelectorsEnabled=true}]
+Session ID: 77e08c6a4fb04fa5a94b31aa7fedaa48
+*** Element info: {Using=id, value=user-name}Enter Password: secret_sauceCan&apos;t execute login Performance Glitch User function: org.openqa.selenium.NoSuchElementException: Unable to find element with id == user-name (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 312 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;SAUCE-M5KOC5RP6&apos;, ip: &apos;172.20.35.36&apos;, os.name: &apos;Windows Server 2008 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=about:blank, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXa414e1e2
+*** Element info: {Using=id, value=user-name}
+Command duration or timeout: 856 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{enablePersistentHover=true, ie.fileUploadDialogTimeout=3000, platform=WINDOWS, ie.ensureCleanSession=false, ie.browserCommandLineSwitches=, requireWindowFocus=false, takesScreenshot=true, browserName=internet explorer, javascriptEnabled=true, unexpectedAlertBehaviour=dismiss, browserAttachTimeout=0, ie.enableFullPageScreenshot=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, hasMetadata=true, version=11, nativeEvents=true, elementScrollBehavior=0, webdriver.remote.sessionid=8574c99437ad4979bb0f7c2dd144807f, initialBrowserUrl=about:blank, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true}]
+Session ID: 8574c99437ad4979bb0f7c2dd144807f
+*** Element info: {Using=id, value=user-name}Click Login button</system-out>
+  </testcase>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginPerfGlitchUser" time="21.006">
+    <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.DemoTest.Tests.WebDemoTest.LoginPerfGlitchUser(WebDemoTest.java:90)
+</failure>
+  </testcase>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginPerfGlitchUser" time="23.989"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginPerfGlitchUser" time="26.354">
+    <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.DemoTest.Tests.WebDemoTest.LoginPerfGlitchUser(WebDemoTest.java:90)
+</failure>
+    <system-out>Can&apos;t execute login Performance Glitch User function: org.openqa.selenium.NoSuchElementException: Could not find element: {&quot;using&quot;:&quot;css selector&quot;,&quot;value&quot;:&quot;#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button&quot;} (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.0&apos;, revision: &apos;b7b081a&apos;, time: &apos;2015-10-07 15:48:56&apos;
+System info: host: &apos;itako1048.prod.miso&apos;, ip: &apos;10.125.2.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=10.0.1, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null
+*** Element info: {Using=css selector, value=#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button}
+Command duration or timeout: 396 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SL-1155.attlocal.net&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{webdriver.remote.sessionid=2700ac2bb30e43928ebf288d08f3ec7a, takesScreenshot=true, browserName=safari, javascriptEnabled=true, hasMetadata=true, version=10.0.1, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: 2700ac2bb30e43928ebf288d08f3ec7a
+*** Element info: {Using=css selector, value=#menu_button_container &gt; div &gt; div:nth-child(3) &gt; div &gt; button}</system-out>
+  </testcase>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginPerfGlitchUser" time="28.242"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginPerfGlitchUser" time="31.956"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="LoginPerfGlitchUser" time="32.656"/>
 </testsuite>
