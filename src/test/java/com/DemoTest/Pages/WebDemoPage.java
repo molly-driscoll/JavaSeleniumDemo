@@ -116,6 +116,70 @@ public class WebDemoPage {
       
     }
     
+public Boolean  LoginPerfGlitchUser(String user, String passwd) {
+    	
+    	Boolean value = false;
+    	int delay = 3000;
+    	
+    	try
+    	
+    	{
+    	
+    	System.out.printf("Starting Login Performance Glitch User function now");
+    	
+    	System.out.printf("Enter username: " +user);
+    	username.sendKeys(user);
+    	
+    	System.out.printf("Enter Password: " +passwd);
+    	password.sendKeys(passwd);
+    	
+    	System.out.printf("Click Login button");   	
+    	Thread.sleep(delay);
+    	LoginButton.click();
+    	
+    	System.out.printf("Click on Hamburger icon");   
+    	Thread.sleep(delay);
+    	hamburgericon.click();
+    	
+    	System.out.printf("Performing validation");   
+   // 	Thread.sleep(delay);
+    	
+    	
+if(driver.getPageSource().contains("Logout")){
+	
+			// Race condition for time to populate yourCommentsSpan
+		    WebDriverWait wait = new WebDriverWait(driver, 15);
+		    wait.until(ExpectedConditions.textToBePresentInElement(LogoutButton, "Logout"));		   		
+    		System.out.println("Login Locked out User Passed");
+    		
+    		
+    		value = true;
+    		
+    		}
+    	
+    	else {
+    		System.out.println("Login Locked out User Failed");
+    		
+    		}
+    	
+    	  
+    	LogoutButton.click();
+    	
+    	
+    	
+    	}
+    	
+    	catch (Exception ex)
+    	{
+    		
+    		System.out.printf("Can't execute login Performance Glitch User function: " +ex);
+    	}
+    	
+    	return value;
+
+      
+    }
+    
  public Boolean  LoginLockedoutUser(String user, String passwd) {
     	
     	Boolean value = false;

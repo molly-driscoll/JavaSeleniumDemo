@@ -20,7 +20,7 @@ public class WebDemoTest extends TestBase {
      * @throws InvalidElementStateException
      */
     @Test(dataProvider = "hardCodedBrowsers")
-    public void LoginTest(String browser, String version, String os, Method method)
+    public void LoginTestSuite(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
     	
     	Boolean value = true;
