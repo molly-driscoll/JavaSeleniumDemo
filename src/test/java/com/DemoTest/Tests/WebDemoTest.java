@@ -45,7 +45,7 @@ public class WebDemoTest extends TestBase {
 
 
 	 @Test(dataProvider = "hardCodedBrowsers")
-	    public void LoginLockedoutUser(String browser, String version, String os, Method method)
+	    public void Loginother(String browser, String version, String os, Method method)
 	            throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 	    	
 	    	Boolean value = true;
@@ -60,7 +60,7 @@ public class WebDemoTest extends TestBase {
 	       
 	        
 	        this.annotate("Login Locked out user Test..");
-	        Boolean returnvalue = page.LoginLockedoutUser("locked_out_user", "secret_sauce");
+	        Boolean returnvalue = page.Login("locked_out_user", "secret_sauce");
 	        
 	        this.annotate("Asserting the test: Login Locked out user: result");
 	        Assert.assertEquals(value,returnvalue);
@@ -68,6 +68,8 @@ public class WebDemoTest extends TestBase {
 	        
 	     
 	    }
+	    
+	    
 
 	 /**
 	@Test(dataProvider = "hardCodedBrowsers")
