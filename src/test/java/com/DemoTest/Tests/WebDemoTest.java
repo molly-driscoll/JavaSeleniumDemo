@@ -24,7 +24,7 @@ public class WebDemoTest extends TestBase {
 	    public void Login(String browser, String version, String os, Method method)
 	            throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 	    	
-		    System.out.println("\nStarting Login Function for Dataprovider HardCOdedBrowsersLinux");
+		    System.out.println("\nStarting Login Function for Dataprovider HardCodedBrowsersLinux");
 	    	Boolean value = true;
 
 	        //create webdriver session
@@ -66,7 +66,8 @@ public class WebDemoTest extends TestBase {
 	        WebDemoPage page = WebDemoPage.visitPage(driver);
 	        
 	       
-	        
+
+	        System.out.println("\nStarting login function");
 	        this.annotate("Login Test..");
 	        Boolean returnvalue = page.Login("locked_out_user", "secret_sauce");
 	        
