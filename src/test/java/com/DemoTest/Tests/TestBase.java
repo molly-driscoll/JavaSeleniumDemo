@@ -73,7 +73,7 @@ public  class TestBase  {
         	 // mac 
         	 
         	 // mojave macOS 10.14
-        	 
+        	 /**
         	 new Object[]{"firefox", "latest", "macOS 10.14"},
         	 new Object[]{"firefox", "latest -1", "macOS 10.14"},
         	 new Object[]{"firefox", "latest -2", "macOS 10.14"},
@@ -91,6 +91,7 @@ public  class TestBase  {
         	 // macOS Sierra 10.12
         	 new Object[]{"firefox", "latest", "macOS 10.12"},
         	 new Object[]{"chrome", "latest", "macOS 10.12"},
+        	 **/
         	 
         	 // macOS El Capitan 10.11
         	 
