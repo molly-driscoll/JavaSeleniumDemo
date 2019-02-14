@@ -70,7 +70,7 @@ public class WebDemoTest extends TestBase {
 
 	        System.out.println("\nStarting login function");
 	        this.annotate("Login Test..");
-	        Boolean returnvalue = page.Login("locked_out_user", "secret_sauce");
+	        Boolean returnvalue = page.Login("standard_user", "secret_sauce");
 	        
 	        this.annotate("Asserting the test: Login: result");
 	        Assert.assertEquals(value,returnvalue);

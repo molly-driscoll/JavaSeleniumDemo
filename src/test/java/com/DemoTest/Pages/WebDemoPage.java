@@ -85,7 +85,7 @@ public class WebDemoPage {
     	
     	if(driver.getPageSource().contains("Logout")){
     		
-    		System.out.println("Login Passed");
+    		System.out.println("Yay Login Passed");
     		value = true;
     		
     		}
