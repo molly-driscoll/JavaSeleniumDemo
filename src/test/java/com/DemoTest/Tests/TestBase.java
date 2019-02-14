@@ -4,6 +4,8 @@ import com.saucelabs.common.SauceOnDemandAuthentication;
 import com.saucelabs.common.SauceOnDemandSessionIdProvider;
 import com.saucelabs.testng.SauceOnDemandAuthenticationProvider;
 import com.saucelabs.testng.SauceOnDemandTestListener;
+
+import org.json.simple.JSONObject;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.CapabilityType;
@@ -14,19 +16,24 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 
+import java.io.File;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.rmi.UnexpectedException;
+import java.util.HashMap;
+import java.util.LinkedList;
 
 /**
- * Simple TestNG test which demonstrates being instantiated via a DataProvider in order to supply multiple browser combinations.
+ * Simple TestNG test which demonstrates being instantiated via a DataProvider in order to supply multiple browser combinations that execute in parallel
  *
- * @author Neil Manvar
+ * 
  */
 public  class TestBase  {
 
-    public String buildTag = System.getenv("BUILD_TAG");
+    private static final int sauce = 0;
+
+	public String buildTag = System.getenv("BUILD_TAG");
 
     public String username = System.getenv("SAUCE_USERNAME");
 
@@ -52,15 +59,119 @@ public  class TestBase  {
     public static Object[][] sauceBrowserDataProvider(Method testMethod) {
         return new Object[][]{
         	
-                new Object[]{"MicrosoftEdge", "14.14393", "Windows 10"},
+        	
+        	// Linux 
+        	
+        	    
+        	 new Object[]{"chrome", "latest", "Linux"},
+        	 new Object[]{"chrome", "latest -1", "Linux"},
+        	 new Object[]{"chrome", "latest -2", "Linux"},
+        	 new Object[]{"firefox", "latest", "Linux"},
+        	 new Object[]{"firefox", "latest -1", "Linux"},
+        	 new Object[]{"firefox", "latest -2", "Linux"},
+        	 
+        	 // mac 
+        	 
+        	 // mojave macOS 10.14
+        	 
+        	 new Object[]{"firefox", "latest", "macOS 10.14"},
+        	 new Object[]{"firefox", "latest -1", "macOS 10.14"},
+        	 new Object[]{"firefox", "latest -2", "macOS 10.14"},
+        	 new Object[]{"safari", "latest", "macOS 10.14"},
+        	 new Object[]{"chrome", "latest", "macOS 10.14"},
+        	 new Object[]{"chrome", "latest -1", "macOS 10.14"},
+        	 new Object[]{"chrome", "latest -2", "macOS 10.14"},
+        	 new Object[]{"chrome", "beta", "macOS 10.14"},
+        	 
+        	 // high sierra macOS 10.13
+        	 
+        	 new Object[]{"firefox", "latest", "macOS 10.13"},
+        	 new Object[]{"chrome", "latest", "macOS 10.13"},
+        	 
+        	 // macOS Sierra 10.12
+        	 new Object[]{"firefox", "latest", "macOS 10.12"},
+        	 new Object[]{"chrome", "latest", "macOS 10.12"},
+        	 
+        	 // macOS El Capitan 10.11
+        	 
+        //	 new Object[]{"firefox", "latest", "macOS 10.11"},
+        //	 new Object[]{"chrome", "latest", "macOS 10.11"},
+        	 
+        	 // macOS Yosemite 10/10 
+        	 
+        	 /**
+        	 new Object[]{"chrome", "latest", "macOS 10.10"},
+        	 new Object[]{"chrome", "latest -1", "macOS 10.10"},
+        	 new Object[]{"chrome", "latest -2", "macOS 10.10"},
+        	 new Object[]{"chrome", "beta", "macOS 10.10"},
+        	 new Object[]{"safari", "latest", "macOS 10.10"},
+        	 new Object[]{"safari", "latest -1", "macOS 10.10"},
+        	 new Object[]{"safari", "latest -2", "macOS 10.10"},
+        	 new Object[]{"firefox", "latest", "macOS 10.10"},
+        	 new Object[]{"firefox", "latest -1", "macOS 10.10"},
+        	 new Object[]{"firefox", "latest -2", "macOS 10.10"},
+        	 **/
+        	 
+        	 
+        	 // windows 10 
+             //   new Object[]{"MicrosoftEdge", "latest-3", "Windows 10"},             
+                new Object[]{"internet explorer", "latest", "Windows 10"},
+    			new Object[]{"firefox", "latest", "Windows 10"},
+    			new Object[]{"firefox", "latest -1", "Windows 10"},
+     			new Object[]{"firefox", "latest-2", "Windows 10"},
+     			new Object[]{"firefox", "beta", "Windows 10"},
+     			new Object[]{"chrome", "latest", "Windows 10"},
+     			new Object[]{"chrome", "latest -1", "Windows 10"},
+     			new Object[]{"chrome", "latest -2", "Windows 10"},
+     			new Object[]{"chrome", "beta", "Windows 10"},
                 new Object[]{"firefox", "49.0", "Windows 10"},
-                new Object[]{"internet explorer", "11.0", "Windows 7"},
-                new Object[]{"safari", "10.0", "OS X 10.11"},
-                new Object[]{"chrome", "54.0", "OS X 10.10"},
-                new Object[]{"firefox", "latest-1", "Windows 7"},
-                new Object[]{"chrome", "47.0", "Linux"},
+                new Object[]{"internet explorer", "11.0", "Windows 10"},
+                 			 
+     			 // windows 8.1
+     			new Object[]{"chrome", "latest", "Windows 8.1"},
+     			new Object[]{"chrome", "latest -1", "Windows 8.1"},
+     			new Object[]{"chrome", "latest -2", "Windows 8.1"},
+     			new Object[]{"chrome", "latest -3", "Windows 8.1"},
+     			new Object[]{"chrome", "beta", "Windows 8.1"},   			
+     			new Object[]{"firefox", "latest", "Windows 8.1"},
+     			new Object[]{"firefox", "latest -1", "Windows 8.1"},
+     			new Object[]{"firefox", "latest -2", "Windows 8.1"},
+     			new Object[]{"firefox", "latest -3", "Windows 8.1"},
+     			new Object[]{"firefox", "beta", "Windows 8.1"},
+     			new Object[]{"internet explorer", "latest", "Windows 8.1"},
+     			
+     			// windows 8
+     			new Object[]{"firefox", "latest", "Windows 8"},
+     			new Object[]{"firefox", "latest -1", "Windows 8"},
+     			new Object[]{"firefox", "latest -2", "Windows 8"},
+     			new Object[]{"firefox", "beta", "Windows 8"},
+     			new Object[]{"chrome", "latest", "Windows 8"},
+     			new Object[]{"chrome", "latest -1", "Windows 8"},
+     			new Object[]{"chrome", "latest -2", "Windows 8"},
+     			new Object[]{"chrome", "beta", "Windows 8"},
+     			new Object[]{"internet explorer", "latest", "Windows 8"},
+                 
+     			// windows 7
+     			new Object[]{"internet explorer", "latest", "Windows 7"},
+     			new Object[]{"firefox", "latest", "Windows 7"},
+     			new Object[]{"chrome", "latest", "Windows 7"},
+     			
+                
         };
     }
+    
+    @DataProvider(name = "hardCodedBrowserslinux", parallel = true)
+    	    public static Object[][] sauceBrowserDataProviderLinux(Method testMethod) {
+    	        return new Object[][]{
+    	        	
+    	               
+    	               new Object[]{"safari", "latest", "OS X 10.11"},
+    	                new Object[]{"chrome", "latest", "macOS 10.14"},
+    	                new Object[]{"chrome", "latest", "Linux"},
+    	                new Object[]{"firefox", "latest", "Linux"},
+    	        };
+    	    }
+    
 
     /**
      * @return the {@link WebDriver} for the current thread
@@ -114,6 +225,70 @@ public  class TestBase  {
         String id = ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
         sessionId.set(id);
     }
+    
+
+    protected void createDriverlinux(String browser, String version, String os, String methodName)
+               throws MalformedURLException, UnexpectedException {
+    	
+    	
+    	  
+    	//  String prerunFile = "disablewarnonfraudsites";
+    	  
+    	/**
+    	  HashMap<String, String> prerunParams = new HashMap<String, String>();         
+          prerunParams.put("executable", "sauce-storage:Ianprerun");
+          prerunParams.put("background","false");
+          prerunParams.put("timeout","60");
+    	 **/
+    	
+    	/**
+      JSONObject obj = new JSONObject();
+      obj.put("executable","sauce-storage:Ianprerun");
+      LinkedList<String> list = new LinkedList<String>();
+      list.add("/S");
+      list.add("-a");
+      list.add("-q");
+      obj.put("args",list);
+      obj.put("background","false");     
+      System.out.print("\nHere is the arguments for prerun on the VM:\n" +obj);
+    **/
+    	
+    	 JSONObject obj = new JSONObject();
+    	 obj.put("executable","sauce-storage:Ianprerun");
+    	 obj.put("background","false");
+      
+    	
+           DesiredCapabilities capabilities = new DesiredCapabilities();
+
+  
+           // set desired capabilities to launch appropriate browser on Sauce
+           capabilities.setCapability(CapabilityType.BROWSER_NAME, browser);
+           capabilities.setCapability(CapabilityType.VERSION, version);
+           capabilities.setCapability(CapabilityType.PLATFORM, os);
+           capabilities.setCapability("name", methodName);
+           capabilities.setCapability("extendedDebugging", true);
+          //  capabilities.setCapability("prerun", prerunParams);
+           capabilities.setCapability("prerun", obj);
+         
+
+          
+
+           if (buildTag != null) {
+               capabilities.setCapability("build", buildTag);
+           }
+
+    // Launch remote browser and set it as the current thread
+           webDriver.set(new RemoteWebDriver(
+                   new URL("https://" + username + ":" + accesskey + "@ondemand.saucelabs.com:443/wd/hub"),
+                   capabilities));
+
+           // set current sessionId
+           String id = ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
+           sessionId.set(id);
+
+   }
+
+
 
     /**
      * Method that gets invoked after test.

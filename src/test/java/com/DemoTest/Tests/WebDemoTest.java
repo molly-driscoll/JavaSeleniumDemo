@@ -20,14 +20,15 @@ public class WebDemoTest extends TestBase {
      * @throws InvalidElementStateException
      */
 
-	 @Test(dataProvider = "hardCodedBrowsers")
+	 @Test(dataProvider = "hardCodedBrowserslinux")
 	    public void Login(String browser, String version, String os, Method method)
 	            throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 	    	
 	    	Boolean value = true;
 
 	        //create webdriver session
-	        this.createDriver(browser, version, os, method.getName());
+	    	
+	        this.createDriverlinux(browser, version, os, method.getName());
 	        WebDriver driver = this.getWebDriver();
 
 	        this.annotate("Visiting sauce labs demo page...");
@@ -68,6 +69,7 @@ public class WebDemoTest extends TestBase {
 	     
 	    }
 
+	 /**
 	@Test(dataProvider = "hardCodedBrowsers")
 	    public void LoginPerfGlitchUser(String browser, String version, String os, Method method)
 	            throws MalformedURLException, InvalidElementStateException, UnexpectedException {
@@ -91,7 +93,7 @@ public class WebDemoTest extends TestBase {
 	        
 	             
 	    }
-
+**/
 
 
 
