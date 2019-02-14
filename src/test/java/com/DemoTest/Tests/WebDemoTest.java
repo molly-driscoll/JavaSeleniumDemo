@@ -32,10 +32,11 @@ public class WebDemoTest extends TestBase {
 	        this.createDriverlinux(browser, version, os, method.getName());
 	        WebDriver driver = this.getWebDriver();
 
+	        System.out.println("\nStarting web page");
 	        this.annotate("Visiting sauce labs demo page...");
 	        WebDemoPage page = WebDemoPage.visitPage(driver);
 	        
-	        this.annotate("Login Test..");
+	        this.annotate("Login Test");
 	        Boolean returnvalue = page.Login("standard_user", "secret_sauce");
 	        
 	        this.annotate("Asserting the test: Login Test: result");
