@@ -174,7 +174,7 @@ public  class TestBase  {
     	        return new Object[][]{
     	        	
     	               
-    	               new Object[]{"safari", "latest", "OS X 10.11"},
+    	            //   new Object[]{"safari", "latest", "OS X 10.11"},
     	                new Object[]{"chrome", "latest", "macOS 10.14"},
     	                new Object[]{"chrome", "latest", "Linux"},
     	                new Object[]{"firefox", "latest", "Linux"},
