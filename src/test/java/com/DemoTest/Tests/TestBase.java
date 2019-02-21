@@ -267,7 +267,8 @@ public  class TestBase  {
     **/
     	
     	 JSONObject obj = new JSONObject();
-    	 obj.put("executable","sauce-storage:preruntest.sh");
+    	// obj.put("executable","sauce-storage:preruntest.sh");
+    	 obj.put("executable","https://gist.githubusercontent.com/iflanagan/5af7ff6027ff9d0f3dbb3bea55d670b9/raw/17c4c6a908080af704478f17f5ef750d575cbcdb/preruntest.sh");
     	 obj.put("background","false");
       
     	
@@ -280,10 +281,8 @@ public  class TestBase  {
            capabilities.setCapability(CapabilityType.PLATFORM, os);
            capabilities.setCapability("name", methodName);
            capabilities.setCapability("extendedDebugging", true);
-          //  capabilities.setCapability("prerun", prerunParams);
+           // commented out line below
            capabilities.setCapability("prerun", obj);
-         
-
           
 
            if (buildTag != null) {
