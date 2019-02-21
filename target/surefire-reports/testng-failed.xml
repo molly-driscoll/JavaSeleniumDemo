@@ -7,16 +7,4 @@
       <class name="com.DemoTest.Tests.WebDemoTest"/>
     </classes>
   </test> <!-- Command line test -->
-  <test parallel="classes" name="Command line test(failed)">
-    <classes>
-      <class name="com.DemoTest.Tests.WebDemoTest">
-        <methods>
-          <include name="LoginPerfGlitchUser" invocation-numbers="48 49"/>
-          <include name="tearDown"/>
-          <include name="LoginLockedoutUser" invocation-numbers="1 2 0 3 4 5 7 8 9 6 11 12 10 15 14 19 17 18 16 21 23 20 13 22 24 25 27 29 28 30 31 32 26 34 35 36 33 39 40 37 42 41 44 38 48 46 45 49 43 47 51 50"/>
-          <include name="Login" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.DemoTest.Tests.WebDemoTest -->
-    </classes>
-  </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

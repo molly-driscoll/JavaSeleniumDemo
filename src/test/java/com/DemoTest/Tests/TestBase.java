@@ -267,7 +267,7 @@ public  class TestBase  {
     **/
     	
     	 JSONObject obj = new JSONObject();
-    	 obj.put("executable","sauce-storage:Ianprerun");
+    	 obj.put("executable","sauce-storage:preruntest.sh");
     	 obj.put("background","false");
       
     	
