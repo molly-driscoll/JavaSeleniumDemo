@@ -63,35 +63,35 @@ public class WebDemoPage {
     	
     	{
     	
-    	System.out.printf("Starting login function now");
+    	System.out.printf("\nStarting login function now");
     	
-    	System.out.printf("Enter username: " +user);
+    	System.out.printf("\nEnter username: " +user);
     	username.sendKeys(user);
     	
-    	System.out.printf("Enter Password: " +passwd);
+    	System.out.printf("\nEnter Password: " +passwd);
     	password.sendKeys(passwd);
     	
-    	System.out.printf("Click Login button");   	
+    	System.out.printf("\nClick Login button");   	
     	Thread.sleep(delay);
     	LoginButton.click();
     	
-    	System.out.printf("Click on Hamburger icon");   
+    	System.out.printf("\nClick on Hamburger icon");   
     	Thread.sleep(delay);
     	hamburgericon.click();
     	
-    	System.out.printf("Performing validation");   
+    	System.out.printf("\nPerforming validation");   
     	Thread.sleep(delay);
     	
     	
     	if(driver.getPageSource().contains("Logout")){
     		
-    		System.out.println("Yay Login Passed");
+    		System.out.println("\nYay Login Passed");
     		value = true;
     		
     		}
     	
     	else {
-    		System.out.println("Login Failed");
+    		System.out.println("\nLogin Failed");
     		
     		}
     	
@@ -108,7 +108,7 @@ public class WebDemoPage {
     	catch (Exception ex)
     	{
     		
-    		System.out.printf("Can't execute login function: " +ex);
+    		System.out.printf("\nCan't execute login function: " +ex);
     	}
     	
     	return value;
@@ -125,23 +125,23 @@ public Boolean  LoginPerfGlitchUser(String user, String passwd) {
     	
     	{
     	
-    	System.out.printf("Starting Login Performance Glitch User function now");
+    	System.out.printf("\nStarting Login Performance Glitch User function now");
     	
-    	System.out.printf("Enter username: " +user);
+    	System.out.printf("\nEnter username: " +user);
     	username.sendKeys(user);
     	
-    	System.out.printf("Enter Password: " +passwd);
+    	System.out.printf("\nEnter Password: " +passwd);
     	password.sendKeys(passwd);
     	
-    	System.out.printf("Click Login button");   	
+    	System.out.printf("\nClick Login button");   	
     	Thread.sleep(delay);
     	LoginButton.click();
     	
-    	System.out.printf("Click on Hamburger icon");   
+    	System.out.printf("\nClick on Hamburger icon");   
     	Thread.sleep(delay);
     	hamburgericon.click();
     	
-    	System.out.printf("Performing validation");   
+    	System.out.printf("\nPerforming validation");   
    // 	Thread.sleep(delay);
     	
     	
@@ -150,7 +150,7 @@ if(driver.getPageSource().contains("Logout")){
 			// Race condition for time to populate yourCommentsSpan
 		    WebDriverWait wait = new WebDriverWait(driver, 15);
 		    wait.until(ExpectedConditions.textToBePresentInElement(LogoutButton, "Logout"));		   		
-    		System.out.println("Login Locked out User Passed");
+    		System.out.println("\nLogin Locked out User Passed");
     		
     		
     		value = true;
@@ -158,7 +158,7 @@ if(driver.getPageSource().contains("Logout")){
     		}
     	
     	else {
-    		System.out.println("Login Locked out User Failed");
+    		System.out.println("\nLogin Locked out User Failed");
     		
     		}
     	
@@ -172,7 +172,7 @@ if(driver.getPageSource().contains("Logout")){
     	catch (Exception ex)
     	{
     		
-    		System.out.printf("Can't execute login Performance Glitch User function: " +ex);
+    		System.out.printf("\nCan't execute login Performance Glitch User function: " +ex);
     	}
     	
     	return value;
@@ -189,35 +189,35 @@ if(driver.getPageSource().contains("Logout")){
     	
     	{
     	
-    	System.out.printf("Starting Login Locked out User function now");
+    	System.out.printf("\nStarting Login Locked out User function now");
     	
-    	System.out.printf("Enter username: " +user);
+    	System.out.printf("\nEnter username: " +user);
     	username.sendKeys(user);
     	
-    	System.out.printf("Enter Password: " +passwd);
+    	System.out.printf("\nEnter Password: " +passwd);
     	password.sendKeys(passwd);
     	
-    	System.out.printf("Click Login button");   	
+    	System.out.printf("\nClick Login button");   	
     	Thread.sleep(delay);
     	LoginButton.click();
     	
-    	System.out.printf("Click on Hamburger icon");   
+    	System.out.printf("\nClick on Hamburger icon");   
     	Thread.sleep(delay);
     	hamburgericon.click();
     	
-    	System.out.printf("Performing validation");   
+    	System.out.printf("\nPerforming validation");   
     	Thread.sleep(delay);
     	
     	
     	if(driver.getPageSource().contains("Epic sadface: Sorry, this user has been locked out.")){
     		
-    		System.out.println("Login Locked out User Passed");
+    		System.out.println("\nLogin Locked out User Passed");
     		value = true;
     		
     		}
     	
     	else {
-    		System.out.println("Login Locked out User Failed");
+    		System.out.println("\nLogin Locked out User Failed");
     		
     		}
     	
@@ -234,7 +234,7 @@ if(driver.getPageSource().contains("Logout")){
     	catch (Exception ex)
     	{
     		
-    		System.out.printf("Can't execute login Locked out User function: " +ex);
+    		System.out.printf("\nCan't execute login Locked out User function: " +ex);
     	}
     	
     	return value;
