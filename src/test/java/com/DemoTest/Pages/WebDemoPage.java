@@ -18,7 +18,8 @@ public class WebDemoPage {
     @FindBy(id = "user-name")
     private WebElement username;  
 
-    @FindBy(css = "#login_button_container > div > form > input.login-button")
+  //  @FindBy(css = "#login_button_container > div > form > input.login-button")
+    @FindBy(css = "[type='submit']")
     private WebElement LoginButton; 
     
     @FindBy(css = "#logout_sidebar_link")

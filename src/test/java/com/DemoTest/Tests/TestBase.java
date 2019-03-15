@@ -185,6 +185,21 @@ public  class TestBase  {
     	        };
     	    }
     
+    /*
+     * remove it fails 
+     */
+    
+
+    @DataProvider(name = "hardCodedBrowsersemulator", parallel = true)
+       	    public static Object[][] sauceBrowserDataProviderEmulator(Method testMethod) {
+       	        return new Object[][]{
+       	        	
+       	         new Object[]{"Android GoogleAPI Emulator", "portrait", "Chrome", "8.0", "Android"},
+       	             
+       	        };
+       	    }
+    
+    
 
     /**
      * @return the {@link WebDriver} for the current thread

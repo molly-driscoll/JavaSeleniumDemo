@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="12" failures="0" name="TestSuite" time="337.975" errors="0" skipped="0">
+<testsuite tests="12" failures="0" name="TestSuite" time="350.423" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib"/>
-    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="java.vm.version" value="11.0.2+9-LTS"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib"/>
     <property name="gopherProxySet" value="false"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="/Users/ianflanagan/Downloads/JavaSeleniumDemo"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.os.patch.level" value="unknown"/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="/Users/ianflanagan/Downloads/JavaSeleniumDemo"/>
-    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.2+9-LTS"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.io.tmpdir" value="/var/folders/pt/w20sbht90qs1058r2q4gnqr80000gq/T/"/>
     <property name="line.separator" value="
@@ -30,50 +29,51 @@
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/ianflanagan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="maven.conf" value="/usr/local/Cellar/maven/3.6.0/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.14"/>
+    <property name="os.version" value="10.14.3"/>
     <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.6.0/libexec/lib/jansi-native"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/ianflanagan"/>
     <property name="user.timezone" value="America/Chicago"/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
     <property name="user.name" value="ianflanagan"/>
     <property name="java.class.path" value="/usr/local/Cellar/maven/3.6.0/libexec/boot/plexus-classworlds-2.5.2.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_201"/>
-    <property name="java.ext.dirs" value="/Users/ianflanagan/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
-    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/classes"/>
+    <property name="java.version" value="11.0.2"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="maven.home" value="/usr/local/Cellar/maven/3.6.0/libexec"/>
     <property name="file.separator" value="/"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Login" time="31.671"/>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Login" time="33.238"/>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Login" time="42.474"/>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="22.552"/>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="22.691"/>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="22.789"/>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="23.322"/>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="23.462"/>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="25.887"/>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="28.161"/>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="29.661"/>
-  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="32.067"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Login" time="27.626"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Login" time="30.694"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Login" time="32.414"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="23.639"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="25.195"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="25.866"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="26.004"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="26.86"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="26.991"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="35.016"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="35.043"/>
+  <testcase classname="com.DemoTest.Tests.WebDemoTest" name="Loginother" time="35.075"/>
 </testsuite>

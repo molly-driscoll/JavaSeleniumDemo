@@ -1,39 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="12" passed="12">
+<testng-results total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="75671" started-at="2019-02-28T20:54:50Z" finished-at="2019-02-28T20:56:05Z">
+  <suite started-at="2019-03-15T13:12:13Z" name="Command line suite" finished-at="2019-03-15T13:13:22Z" duration-ms="69131">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="75671" started-at="2019-02-28T20:54:50Z" finished-at="2019-02-28T20:56:05Z">
+    <test started-at="2019-03-15T13:12:13Z" name="Command line test" finished-at="2019-03-15T13:13:22Z" duration-ms="69131">
       <class name="com.DemoTest.Tests.WebDemoTest">
-        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="Login" duration-ms="33238" started-at="2019-02-28T14:54:50Z" data-provider="hardCodedBrowserslinux" finished-at="2019-02-28T14:55:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[latest]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Linux]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="Login" duration-ms="31669" started-at="2019-02-28T14:54:50Z" data-provider="hardCodedBrowserslinux" finished-at="2019-02-28T14:55:21Z">
+        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:12:13Z" name="Login" data-provider="hardCodedBrowserslinux" finished-at="2019-03-15T08:12:41Z" duration-ms="27625" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,7 +33,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="Login" duration-ms="42474" started-at="2019-02-28T14:54:50Z" data-provider="hardCodedBrowserslinux" finished-at="2019-02-28T14:55:32Z">
+        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:12:13Z" name="Login" data-provider="hardCodedBrowserslinux" finished-at="2019-03-15T08:12:45Z" duration-ms="32415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:12:13Z" name="Login" data-provider="hardCodedBrowserslinux" finished-at="2019-03-15T08:12:44Z" duration-ms="30695" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,40 +85,66 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="tearDown" is-config="true" duration-ms="2530" started-at="2019-02-28T14:55:21Z" finished-at="2019-02-28T14:55:24Z">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:12:41Z" name="tearDown" finished-at="2019-03-15T08:12:41Z" duration-ms="795" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login status=SUCCESS method=WebDemoTest.Login(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100] output={null}]]]>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=WebDemoTest.Login(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="tearDown" is-config="true" duration-ms="553" started-at="2019-02-28T14:55:23Z" finished-at="2019-02-28T14:55:24Z">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:12:44Z" name="tearDown" finished-at="2019-03-15T08:12:44Z" duration-ms="355" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login status=SUCCESS method=WebDemoTest.Login(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100] output={null}]]]>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=WebDemoTest.Login(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="tearDown" is-config="true" duration-ms="531" started-at="2019-02-28T14:55:32Z" finished-at="2019-02-28T14:55:33Z">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:12:45Z" name="tearDown" finished-at="2019-03-15T08:12:46Z" duration-ms="844" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login status=SUCCESS method=WebDemoTest.Login(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100] output={null}]]]>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=WebDemoTest.Login(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="Loginother" duration-ms="23325" started-at="2019-02-28T14:55:33Z" data-provider="hardCodedBrowsers" finished-at="2019-02-28T14:55:56Z">
+        <test-method signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:12:46Z" name="Loginother" data-provider="hardCodedBrowsers" finished-at="2019-03-15T08:13:12Z" duration-ms="25872" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginother -->
+        <test-method signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:12:46Z" name="Loginother" data-provider="hardCodedBrowsers" finished-at="2019-03-15T08:13:11Z" duration-ms="25202" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -144,7 +170,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loginother -->
-        <test-method status="PASS" signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="Loginother" duration-ms="22791" started-at="2019-02-28T14:55:33Z" data-provider="hardCodedBrowsers" finished-at="2019-02-28T14:55:56Z">
+        <test-method signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:12:46Z" name="Loginother" data-provider="hardCodedBrowsers" finished-at="2019-03-15T08:13:12Z" duration-ms="26010" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -170,59 +196,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loginother -->
-        <test-method status="PASS" signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="Loginother" duration-ms="29663" started-at="2019-02-28T14:55:33Z" data-provider="hardCodedBrowsers" finished-at="2019-02-28T14:56:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[latest]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Linux]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Loginother -->
-        <test-method status="PASS" signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="Loginother" duration-ms="25888" started-at="2019-02-28T14:55:33Z" data-provider="hardCodedBrowsers" finished-at="2019-02-28T14:55:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[latest]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Windows 8.1]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Loginother -->
-        <test-method status="PASS" signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="Loginother" duration-ms="23464" started-at="2019-02-28T14:55:33Z" data-provider="hardCodedBrowsers" finished-at="2019-02-28T14:55:56Z">
+        <test-method signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:12:46Z" name="Loginother" data-provider="hardCodedBrowsers" finished-at="2019-03-15T08:13:21Z" duration-ms="35048" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -248,7 +222,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loginother -->
-        <test-method status="PASS" signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="Loginother" duration-ms="32069" started-at="2019-02-28T14:55:33Z" data-provider="hardCodedBrowsers" finished-at="2019-02-28T14:56:05Z">
+        <test-method signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:12:46Z" name="Loginother" data-provider="hardCodedBrowsers" finished-at="2019-03-15T08:13:21Z" duration-ms="35079" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -274,7 +248,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loginother -->
-        <test-method status="PASS" signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="Loginother" duration-ms="22553" started-at="2019-02-28T14:55:33Z" data-provider="hardCodedBrowsers" finished-at="2019-02-28T14:55:55Z">
+        <test-method signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:12:46Z" name="Loginother" data-provider="hardCodedBrowsers" finished-at="2019-03-15T08:13:10Z" duration-ms="23643" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -288,7 +262,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Windows 8]]>
+                <![CDATA[Windows 7]]>
               </value>
             </param>
             <param index="3">
@@ -300,7 +274,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loginother -->
-        <test-method status="PASS" signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="Loginother" duration-ms="28162" started-at="2019-02-28T14:55:33Z" data-provider="hardCodedBrowsers" finished-at="2019-02-28T14:56:01Z">
+        <test-method signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:12:46Z" name="Loginother" data-provider="hardCodedBrowsers" finished-at="2019-03-15T08:13:21Z" duration-ms="35021" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -326,7 +300,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loginother -->
-        <test-method status="PASS" signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="Loginother" duration-ms="22690" started-at="2019-02-28T14:55:33Z" data-provider="hardCodedBrowsers" finished-at="2019-02-28T14:55:55Z">
+        <test-method signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:12:46Z" name="Loginother" data-provider="hardCodedBrowsers" finished-at="2019-03-15T08:13:13Z" duration-ms="26995" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -340,7 +314,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Windows 7]]>
+                <![CDATA[Windows 8]]>
               </value>
             </param>
             <param index="3">
@@ -352,99 +326,125 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loginother -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="tearDown" is-config="true" duration-ms="377" started-at="2019-02-28T14:55:55Z" finished-at="2019-02-28T14:55:56Z">
+        <test-method signature="Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:12:46Z" name="Loginother" data-provider="hardCodedBrowsers" finished-at="2019-03-15T08:13:13Z" duration-ms="26865" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100] output={null}]]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 8.1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginother -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:13:10Z" name="tearDown" finished-at="2019-03-15T08:13:10Z" duration-ms="339" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="tearDown" is-config="true" duration-ms="410" started-at="2019-02-28T14:55:55Z" finished-at="2019-02-28T14:55:56Z">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:13:11Z" name="tearDown" finished-at="2019-03-15T08:13:12Z" duration-ms="425" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100] output={null}]]]>
+                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="tearDown" is-config="true" duration-ms="521" started-at="2019-02-28T14:55:56Z" finished-at="2019-02-28T14:55:56Z">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:13:12Z" name="tearDown" finished-at="2019-03-15T08:13:12Z" duration-ms="422" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100] output={null}]]]>
+                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="tearDown" is-config="true" duration-ms="520" started-at="2019-02-28T14:55:56Z" finished-at="2019-02-28T14:55:57Z">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:13:12Z" name="tearDown" finished-at="2019-03-15T08:13:13Z" duration-ms="638" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100] output={null}]]]>
+                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="tearDown" is-config="true" duration-ms="795" started-at="2019-02-28T14:55:56Z" finished-at="2019-02-28T14:55:57Z">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:13:13Z" name="tearDown" finished-at="2019-03-15T08:13:14Z" duration-ms="528" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100] output={null}]]]>
+                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="tearDown" is-config="true" duration-ms="372" started-at="2019-02-28T14:55:59Z" finished-at="2019-02-28T14:55:59Z">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:13:13Z" name="tearDown" finished-at="2019-03-15T08:13:14Z" duration-ms="466" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100] output={null}]]]>
+                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="tearDown" is-config="true" duration-ms="3744" started-at="2019-02-28T14:56:01Z" finished-at="2019-02-28T14:56:05Z">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:13:21Z" name="tearDown" finished-at="2019-03-15T08:13:22Z" duration-ms="332" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100] output={null}]]]>
+                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="tearDown" is-config="true" duration-ms="605" started-at="2019-02-28T14:56:02Z" finished-at="2019-02-28T14:56:03Z">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:13:21Z" name="tearDown" finished-at="2019-03-15T08:13:22Z" duration-ms="798" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100] output={null}]]]>
+                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100]" name="tearDown" is-config="true" duration-ms="573" started-at="2019-02-28T14:56:05Z" finished-at="2019-02-28T14:56:05Z">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d]" started-at="2019-03-15T08:13:21Z" name="tearDown" finished-at="2019-03-15T08:13:22Z" duration-ms="470" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@4cb2c100] output={null}]]]>
+                <![CDATA[[TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.DemoTest.Tests.WebDemoTest@3c9d0b9d] output={null}]]]>
               </value>
             </param>
           </params>
