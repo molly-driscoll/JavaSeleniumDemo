@@ -2,7 +2,7 @@
  * 
  */
 /**
- * @author ianflanagan
+ * @author imfaus
  *
  */
 module Demo {

@@ -22,8 +22,10 @@ public class GuineaPigPage {
     private WebElement submitButton;
 
     public WebDriver driver;
+   
     public static String url = "https://saucelabs-sample-test-frameworks.github.io/training-test-page";
 
+    /**
     public static GuineaPigPage visitPage(WebDriver driver) {
         GuineaPigPage page = new GuineaPigPage(driver);
         page.visitPage();
@@ -60,5 +62,5 @@ public class GuineaPigPage {
         String title = "I am a page title - Sauce Labs";
         return driver.getTitle() == title;
     }
-
+**/
 }
