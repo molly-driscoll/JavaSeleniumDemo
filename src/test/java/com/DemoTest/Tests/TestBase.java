@@ -84,7 +84,7 @@ public  class TestBase  {
      		
      			new Object[]{"firefox", "latest", "Windows 7"},
      			new Object[]{"chrome", "latest", "Windows 7"},
-     			new Object[]{"Internet Explorer", "latest", "Windows 7"},
+     		//	new Object[]{"Internet Explorer", "latest", "Windows 7"},
      			
                 
         };
