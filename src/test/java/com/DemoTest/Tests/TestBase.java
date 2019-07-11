@@ -153,7 +153,7 @@ public  class TestBase  {
         capabilities.setCapability(CapabilityType.PLATFORM, os);
         capabilities.setCapability("name", methodName);
         capabilities.setCapability("extendedDebugging", true);
-        capabilities.setCapability("name", "Selenium demo Test");
+      //  capabilities.setCapability("name", method);
         capabilities.setCapability("tags", "Smoke_Test");
         
       
