@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods,   12 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,  1 skipped,  9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Loginother(Internet Explorer, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lan...)">Loginother(Internet Explorer, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lan...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods skipped suite-Command_line_suite"> (hide)</a> <!-- hide-methods skipped suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods skipped suite-Command_line_suite"> (show)</a> <!-- show-methods skipped suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Command_line_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +130,22 @@
                     <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Login(chrome, latest, macOS 10.14, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java....)">Login(chrome, latest, macOS 10.14, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java....)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Login(chrome, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java.lang.S...)">Login(chrome, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java.lang.S...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Login(firefox, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java.lang....)">Login(firefox, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java.lang....)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Loginother(chrome, latest, Windows 8, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,ja...)">Loginother(chrome, latest, Windows 8, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,ja...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Loginother(firefox, latest -1, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.Str...)">Loginother(firefox, latest -1, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.Str...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Loginother(firefox, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String...)">Loginother(firefox, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Loginother(safari, latest, macOS 10.14, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,...)">Loginother(safari, latest, macOS 10.14, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -127,7 +155,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Loginother(firefox, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java....)">Loginother(firefox, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java....)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Loginother(chrome, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,ja...)">Loginother(chrome, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,ja...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,27 +165,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Loginother(chrome, latest -1, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,jav...)">Loginother(chrome, latest -1, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,jav...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Loginother(chrome, latest -1, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.Stri...)">Loginother(chrome, latest -1, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.Stri...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Loginother(chrome, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,...)">Loginother(chrome, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Loginother(chrome, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.l...)">Loginother(chrome, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.l...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Loginother(chrome, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,ja...)">Loginother(chrome, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,ja...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.DemoTest.Tests.WebDemoTest" class="method navigator-link" hash-for-method="Loginother(firefox, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String...)">Loginother(firefox, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -172,6 +185,50 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.DemoTest.Tests.WebDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Loginother(Internet Explorer, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lan...)">
+                  </a> <!-- Loginother(Internet Explorer, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lan...) -->
+                  <span class="method-name">Loginother</span>
+                  <span class="parameters">(Internet Explorer, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at com.DemoTest.Tests.WebDemoTest.Loginother(WebDemoTest.java:79)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.DemoTest.Tests.WebDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login">
+                  </a> <!-- Login -->
+                  <span class="method-name">Login</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -180,34 +237,34 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Login(chrome, latest, macOS 10.14, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java....)">
-                  </a> <!-- Login(chrome, latest, macOS 10.14, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java....) -->
-                  <span class="method-name">Login</span>
-                  <span class="parameters">(chrome, latest, macOS 10.14, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Login(chrome, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java.lang.S...)">
-                  </a> <!-- Login(chrome, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java.lang.S...) -->
-                  <span class="method-name">Login</span>
-                  <span class="parameters">(chrome, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Login(firefox, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java.lang....)">
-                  </a> <!-- Login(firefox, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java.lang....) -->
-                  <span class="method-name">Login</span>
-                  <span class="parameters">(firefox, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="Loginother(chrome, latest, Windows 8, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,ja...)">
                   </a> <!-- Loginother(chrome, latest, Windows 8, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,ja...) -->
                   <span class="method-name">Loginother</span>
                   <span class="parameters">(chrome, latest, Windows 8, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Loginother(firefox, latest -1, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.Str...)">
+                  </a> <!-- Loginother(firefox, latest -1, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.Str...) -->
+                  <span class="method-name">Loginother</span>
+                  <span class="parameters">(firefox, latest -1, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Loginother(firefox, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String...)">
+                  </a> <!-- Loginother(firefox, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String...) -->
+                  <span class="method-name">Loginother</span>
+                  <span class="parameters">(firefox, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Loginother(safari, latest, macOS 10.14, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,...)">
+                  </a> <!-- Loginother(safari, latest, macOS 10.14, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,...) -->
+                  <span class="method-name">Loginother</span>
+                  <span class="parameters">(safari, latest, macOS 10.14, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -220,10 +277,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Loginother(firefox, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java....)">
-                  </a> <!-- Loginother(firefox, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java....) -->
+                  <a name="Loginother(chrome, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,ja...)">
+                  </a> <!-- Loginother(chrome, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,ja...) -->
                   <span class="method-name">Loginother</span>
-                  <span class="parameters">(firefox, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <span class="parameters">(chrome, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -236,10 +293,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Loginother(chrome, latest -1, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,jav...)">
-                  </a> <!-- Loginother(chrome, latest -1, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,jav...) -->
+                  <a name="Loginother(chrome, latest -1, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.Stri...)">
+                  </a> <!-- Loginother(chrome, latest -1, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.Stri...) -->
                   <span class="method-name">Loginother</span>
-                  <span class="parameters">(chrome, latest -1, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
+                  <span class="parameters">(chrome, latest -1, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -248,30 +305,6 @@
                   </a> <!-- Loginother(chrome, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,...) -->
                   <span class="method-name">Loginother</span>
                   <span class="parameters">(chrome, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Loginother(chrome, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.l...)">
-                  </a> <!-- Loginother(chrome, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.l...) -->
-                  <span class="method-name">Loginother</span>
-                  <span class="parameters">(chrome, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Loginother(chrome, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,ja...)">
-                  </a> <!-- Loginother(chrome, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,ja...) -->
-                  <span class="method-name">Loginother</span>
-                  <span class="parameters">(chrome, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Loginother(firefox, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String...)">
-                  </a> <!-- Loginother(firefox, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String...) -->
-                  <span class="method-name">Loginother</span>
-                  <span class="parameters">(firefox, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -284,9 +317,10 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;40&quot; parallel=&quot;classes&quot; name=&quot;Command line suite&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;Command line suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.DemoTest.Tests.HeadlessTest&quot;/&gt;
       &lt;class name=&quot;com.DemoTest.Tests.TestBase&quot;/&gt;
       &lt;class name=&quot;com.DemoTest.Tests.WebDemoTest&quot;/&gt;
     &lt;/classes&gt;
@@ -302,7 +336,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (2 classes)</span>
+                <span class="test-name">Command line test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -328,60 +362,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login')
+data.setCell(0, 1, 'Loginother')
 data.setCell(0, 2, 'com.DemoTest.Tests.WebDemoTest')
-data.setCell(0, 3, 36115);
+data.setCell(0, 3, 76653);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Login')
+data.setCell(1, 1, 'Loginother')
 data.setCell(1, 2, 'com.DemoTest.Tests.WebDemoTest')
-data.setCell(1, 3, 30853);
+data.setCell(1, 3, 73178);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Login')
+data.setCell(2, 1, 'Loginother')
 data.setCell(2, 2, 'com.DemoTest.Tests.WebDemoTest')
-data.setCell(2, 3, 30017);
+data.setCell(2, 3, 72766);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'Loginother')
 data.setCell(3, 2, 'com.DemoTest.Tests.WebDemoTest')
-data.setCell(3, 3, 28580);
+data.setCell(3, 3, 71139);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'Loginother')
 data.setCell(4, 2, 'com.DemoTest.Tests.WebDemoTest')
-data.setCell(4, 3, 26664);
+data.setCell(4, 3, 69517);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'Loginother')
 data.setCell(5, 2, 'com.DemoTest.Tests.WebDemoTest')
-data.setCell(5, 3, 24688);
+data.setCell(5, 3, 28185);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'Loginother')
 data.setCell(6, 2, 'com.DemoTest.Tests.WebDemoTest')
-data.setCell(6, 3, 23595);
+data.setCell(6, 3, 27525);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'Loginother')
 data.setCell(7, 2, 'com.DemoTest.Tests.WebDemoTest')
-data.setCell(7, 3, 22102);
+data.setCell(7, 3, 27162);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'Loginother')
 data.setCell(8, 2, 'com.DemoTest.Tests.WebDemoTest')
-data.setCell(8, 3, 21957);
+data.setCell(8, 3, 25645);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'Loginother')
 data.setCell(9, 2, 'com.DemoTest.Tests.WebDemoTest')
-data.setCell(9, 3, 21945);
+data.setCell(9, 3, 20007);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'Loginother')
+data.setCell(10, 1, 'Login')
 data.setCell(10, 2, 'com.DemoTest.Tests.WebDemoTest')
-data.setCell(10, 3, 21641);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'Loginother')
-data.setCell(11, 2, 'com.DemoTest.Tests.WebDemoTest')
-data.setCell(11, 3, 21524);
+data.setCell(10, 3, 0);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -409,100 +439,86 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.DemoTest.Tests.WebDemoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">Login(chrome, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java.lang.S...)</span>
+                <span class="method-name">Loginother(firefox, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,j...)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Login(firefox, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java.lang....)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Login(chrome, latest, macOS 10.14, public void com.DemoTest.Tests.WebDemoTest.Login(java.lang.String,java....)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=Login status=SUCCESS method=WebDemoTest.Login(java.lang.String, java.lang.String, j...)</span>
-                <span class="method-start">30018 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=Login status=SUCCESS method=WebDemoTest.Login(java.lang.String, java.lang.String, j...)</span>
-                <span class="method-start">30854 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=Login status=SUCCESS method=WebDemoTest.Login(java.lang.String, java.lang.String, j...)</span>
-                <span class="method-start">36116 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">Loginother(chrome, latest -1, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,jav...)</span>
-                <span class="method-start">36549 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Loginother(chrome, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java.l...)</span>
-                <span class="method-start">36549 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Loginother(firefox, latest, Linux, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,java....)</span>
-                <span class="method-start">36549 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Loginother(chrome, latest, Windows 10, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,j...)</span>
-                <span class="method-start">36550 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Loginother(firefox, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String...)</span>
-                <span class="method-start">36550 ms</span>
+                <span class="method-name">Loginother(chrome, latest -1, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.Stri...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Loginother(Internet Explorer, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lan...)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Loginother(chrome, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,...)</span>
-                <span class="method-start">36551 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Loginother(chrome, latest, Windows 8, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,ja...)</span>
-                <span class="method-start">36551 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Loginother(firefox, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,j...)</span>
-                <span class="method-start">36551 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Loginother(chrome, latest, Windows 7, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,ja...)</span>
-                <span class="method-start">36552 ms</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Loginother(firefox, latest, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Loginother(firefox, latest -1, Windows 8.1, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.Str...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Loginother(safari, latest, macOS 10.14, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Loginother(chrome, latest, Windows 8, public void com.DemoTest.Tests.WebDemoTest.Loginother(java.lang.String,ja...)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang...)</span>
-                <span class="method-start">58076 ms</span>
+                <span class="method-name">tearDown([TestResult name=Loginother status=FAILURE method=WebDemoTest.Loginother(java.lang.String, java.lang...)</span>
+                <span class="method-start">20010 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang...)</span>
-                <span class="method-start">58192 ms</span>
+                <span class="method-start">25646 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang...)</span>
-                <span class="method-start">58496 ms</span>
+                <span class="method-start">27163 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang...)</span>
-                <span class="method-start">58506 ms</span>
+                <span class="method-start">27525 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang...)</span>
-                <span class="method-start">58651 ms</span>
+                <span class="method-start">28185 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang...)</span>
-                <span class="method-start">60147 ms</span>
+                <span class="method-start">69518 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang...)</span>
-                <span class="method-start">61237 ms</span>
+                <span class="method-start">71140 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang...)</span>
-                <span class="method-start">63214 ms</span>
+                <span class="method-start">72767 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang...)</span>
-                <span class="method-start">65131 ms</span>
+                <span class="method-start">73178 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=Loginother status=SUCCESS method=WebDemoTest.Loginother(java.lang.String, java.lang...)</span>
+                <span class="method-start">76653 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

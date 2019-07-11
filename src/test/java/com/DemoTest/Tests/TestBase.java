@@ -21,6 +21,8 @@ import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.rmi.UnexpectedException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.LinkedList;
 
@@ -59,135 +61,48 @@ public  class TestBase  {
     public static Object[][] sauceBrowserDataProvider(Method testMethod) {
         return new Object[][]{
         	
-        	
-        	// Linux 
-        	
-        	    
-        	 new Object[]{"chrome", "latest", "Linux"},
-        	 new Object[]{"chrome", "latest -1", "Linux"},
-        	// new Object[]{"chrome", "latest -2", "Linux"},
-        	 new Object[]{"firefox", "latest", "Linux"},
-        	// new Object[]{"firefox", "latest -x1", "Linux"},
-        	// new Object[]{"firefox", "latest -2", "Linux"},
-        	 
-        	
-        	 // mac 
-        	 
-        	 // mojave macOS 10.14
-        	 /**
-        	 new Object[]{"firefox", "latest", "macOS 10.14"},
-        	 new Object[]{"firefox", "latest -1", "macOS 10.14"},
-        	 new Object[]{"firefox", "latest -2", "macOS 10.14"},
-        	 new Object[]{"safari", "latest", "macOS 10.14"},
-        	 new Object[]{"chrome", "latest", "macOS 10.14"},
-        	 new Object[]{"chrome", "latest -1", "macOS 10.14"},
-        	 new Object[]{"chrome", "latest -2", "macOS 10.14"},
-        	 new Object[]{"chrome", "beta", "macOS 10.14"},
-        	 
-        	 // high sierra macOS 10.13
-        	 
-        	 new Object[]{"firefox", "latest", "macOS 10.13"},
-        	 new Object[]{"chrome", "latest", "macOS 10.13"},
-        	 
-        	 // macOS Sierra 10.12
-        	 new Object[]{"firefox", "latest", "macOS 10.12"},
-        	 new Object[]{"chrome", "latest", "macOS 10.12"},
-        	 **/
-        	 
-        	 // macOS El Capitan 10.11
-        	 
-        //	 new Object[]{"firefox", "latest", "macOS 10.11"},
-        //	 new Object[]{"chrome", "latest", "macOS 10.11"},
-        	 
-        	 // macOS Yosemite 10/10 
-        	 
-        	 /**
-        	 new Object[]{"chrome", "latest", "macOS 10.10"},
-        	 new Object[]{"chrome", "latest -1", "macOS 10.10"},
-        	 new Object[]{"chrome", "latest -2", "macOS 10.10"},
-        	 new Object[]{"chrome", "beta", "macOS 10.10"},
-        	 new Object[]{"safari", "latest", "macOS 10.10"},
-        	 new Object[]{"safari", "latest -1", "macOS 10.10"},
-        	 new Object[]{"safari", "latest -2", "macOS 10.10"},
-        	 new Object[]{"firefox", "latest", "macOS 10.10"},
-        	 new Object[]{"firefox", "latest -1", "macOS 10.10"},
-        	 new Object[]{"firefox", "latest -2", "macOS 10.10"},
-        	 **/
-        	 
         	 
         	 // windows 10 
         	 
         	 new Object[]{"chrome", "latest", "Windows 10"},
         	 
-             //   new Object[]{"MicrosoftEdge", "latest-3", "Windows 10"},             
-             //   new Object[]{"internet explorer", "latest", "Windows 10"},
-    		//	new Object[]{"firefox", "latest", "Windows 10"},
-    			/**
-    			new Object[]{"firefox", "latest -1", "Windows 10"},
-     			new Object[]{"firefox", "latest-2", "Windows 10"},
-     			new Object[]{"firefox", "beta", "Windows 10"},
-     			new Object[]{"chrome", "latest", "Windows 10"},
-     			new Object[]{"chrome", "latest -1", "Windows 10"},
-     			new Object[]{"chrome", "latest -2", "Windows 10"},
-     			new Object[]{"chrome", "beta", "Windows 10"},
-                new Object[]{"firefox", "49.0", "Windows 10"},
-                **/
-              //  new Object[]{"internet explorer", "11.0", "Windows 10"},
-                 			 
+           
      			 // windows 8.1
      			new Object[]{"firefox", "latest", "Windows 8.1"},
      			new Object[]{"chrome", "latest", "Windows 8.1"},
-     			/**
-     			new Object[]{"chrome", "latest -1", "Windows 8.1"},
-     			new Object[]{"chrome", "latest -2", "Windows 8.1"},
-     			new Object[]{"chrome", "latest -3", "Windows 8.1"},
-     			new Object[]{"chrome", "beta", "Windows 8.1"},   			
-     			new Object[]{"firefox", "latest", "Windows 8.1"},
      			new Object[]{"firefox", "latest -1", "Windows 8.1"},
-     			new Object[]{"firefox", "latest -2", "Windows 8.1"},
-     			new Object[]{"firefox", "latest -3", "Windows 8.1"},
-     			new Object[]{"firefox", "beta", "Windows 8.1"},
-     			new Object[]{"internet explorer", "latest", "Windows 8.1"},
-     			**/
+     			new Object[]{"chrome", "latest -1", "Windows 8.1"},
+     			
+     			new Object[]{"safari", "latest", "macOS 10.14"}, //12.0 safari version
+     			
+     			
      			
      			// windows 8
      			new Object[]{"chrome", "latest", "Windows 8"},
-     			/**
-     			new Object[]{"firefox", "latest -1", "Windows 8"},
-     			new Object[]{"firefox", "latest -2", "Windows 8"},
-     			new Object[]{"firefox", "beta", "Windows 8"},
-     			new Object[]{"chrome", "latest", "Windows 8"},
-     			new Object[]{"chrome", "latest -1", "Windows 8"},
-     			new Object[]{"chrome", "latest -2", "Windows 8"},
-     			new Object[]{"chrome", "beta", "Windows 8"},
-     		//	new Object[]{"internet explorer", "latest", "Windows 8"},
-     		 * **/
-     		 
-                 
+     			
      			// windows 7
-     		//	new Object[]{"internet explorer", "latest", "Windows 7"},
+     		
      			new Object[]{"firefox", "latest", "Windows 7"},
      			new Object[]{"chrome", "latest", "Windows 7"},
+     			new Object[]{"Internet Explorer", "latest", "Windows 7"},
      			
                 
         };
     }
     
-    @DataProvider(name = "hardCodedBrowserslinux", parallel = true)
-    	    public static Object[][] sauceBrowserDataProviderLinux(Method testMethod) {
-    	        return new Object[][]{
-    	        	
-    	               
-    	            //   new Object[]{"safari", "latest", "OS X 10.11"},
-    	                new Object[]{"chrome", "latest", "macOS 10.14"},
-    	                new Object[]{"chrome", "latest", "Linux"},
-    	                new Object[]{"firefox", "latest", "Linux"},
-    	        };
-    	    }
+//    @DataProvider(name = "hardCodedBrowserslinux", parallel = true)
+//    	    public static Object[][] sauceBrowserDataProviderLinux(Method testMethod) {
+//    	        return new Object[][]{
+//    	        	
+//    	               
+//    	            //   new Object[]{"safari", "latest", "OS X 10.11"},
+//    	                new Object[]{"chrome", "latest", "macOS 10.14"},
+//    	                new Object[]{"chrome", "latest", "Linux"},
+//    	                new Object[]{"firefox", "latest", "Linux"},
+//    	        };
+//    	    }
+//    
     
-    /*
-     * remove it fails 
-     */
     
 
     @DataProvider(name = "hardCodedBrowsersemulator", parallel = true)
@@ -238,16 +153,24 @@ public  class TestBase  {
         capabilities.setCapability(CapabilityType.PLATFORM, os);
         capabilities.setCapability("name", methodName);
         capabilities.setCapability("extendedDebugging", true);
-       
+        capabilities.setCapability("name", "Selenium demo Test");
+        capabilities.setCapability("tags", "Smoke_Test");
+        
+      
+    	
 
         if (buildTag != null) {
+        	
             capabilities.setCapability("build", buildTag);
         }
+        
 
         // Launch remote browser and set it as the current thread
         webDriver.set(new RemoteWebDriver(
-                new URL("https://" + username + ":" + accesskey + "@ondemand.saucelabs.com:443/wd/hub"),
-                capabilities));
+        		
+               new URL("https://" + username + ":" + accesskey + "@ondemand.saucelabs.com:443/wd/hub"), capabilities));
+             //   new URL("https://" + username + ":" + accesskey + "@ondemand.us-east-1.saucelabs.com/wd/hub"), capabilities));
+        // public static final String URL = "http://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.us-east-1.saucelabs.com/wd/hub"; 
 
         // set current sessionId
         String id = ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
