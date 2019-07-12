@@ -229,7 +229,7 @@ if(driver.getPageSource().contains("Logout")){
          //  WebDriverWait wait = new WebDriverWait(driver, 15);
         //   wait.until(ExpectedConditions.textToBePresentInElement(username, user));
     	
-    	LogoutButton.click();
+    //	LogoutButton.click();
     	
     	
     	
