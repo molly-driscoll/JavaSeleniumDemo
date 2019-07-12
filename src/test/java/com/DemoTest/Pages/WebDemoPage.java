@@ -245,6 +245,72 @@ if(driver.getPageSource().contains("Logout")){
 
       
     }
+ 
+ 
+public Boolean LoginProblemUser(String user, String passwd) {
+  	
+  	Boolean value = false;
+  	int delay = 3000;
+  	
+  	try
+  	
+  	{
+  	
+  	System.out.printf("\nStarting Login Problem User function now");
+  	
+  	System.out.printf("\nEnter username: " +user);
+  	username.sendKeys(user);
+  	
+  	System.out.printf("\nEnter Password: " +passwd);
+  	password.sendKeys(passwd);
+  	
+  	System.out.printf("\nClick Login button");   	
+  	Thread.sleep(delay);
+  	LoginButton.click();
+  	
+  	System.out.printf("\nClick on Hamburger icon");   
+  	Thread.sleep(delay);
+  	hamburgericon.click();
+  	
+  	System.out.printf("\nPerforming validation");   
+ // 	Thread.sleep(delay);
+  	
+  	
+if(driver.getPageSource().contains("Logout")){
+	
+			// Race condition for time to populate yourCommentsSpan
+		    WebDriverWait wait = new WebDriverWait(driver, 15);
+		    wait.until(ExpectedConditions.textToBePresentInElement(LogoutButton, "Logout"));		   		
+  		System.out.println("\nLogin Problem User Passed");
+  		
+  		
+  		value = true;
+  		
+  		}
+  	
+  	else {
+  		System.out.println("\nLogin Problem User Failed");
+  		
+  		}
+  	
+  	  
+  	LogoutButton.click();
+  	
+  	
+  	
+  	}
+  	
+  	catch (Exception ex)
+  	{
+  		
+  		System.out.printf("\nCan't execute login Problem User function: " +ex);
+  	}
+  	
+  	return value;
+
+    
+  }
+
 
     public String getSubmittedCommentText() {
         return username.getText();

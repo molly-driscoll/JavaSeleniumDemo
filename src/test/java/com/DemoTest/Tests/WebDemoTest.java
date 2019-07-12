@@ -24,7 +24,7 @@ public class WebDemoTest extends TestBase {
 
 
 	 @Test(dataProvider = "hardCodedBrowserslinux")
-	    public void Login(String browser, String version, String os, Method method)
+	    public void LoginLinux(String browser, String version, String os, Method method)
 	            throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 	    	
 		    System.out.println("\nStarting Login Function for Dataprovider HardCodedBrowsersLinux");
@@ -50,7 +50,7 @@ public class WebDemoTest extends TestBase {
 
 
 	 @Test(dataProvider = "hardCodedBrowsers")
-	    public void Loginother(String browser, String version, String os, Method method)
+	    public void Login(String browser, String version, String os, Method method)
 	            throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 	    	
 		 
@@ -98,7 +98,7 @@ public class WebDemoTest extends TestBase {
 	        
 	       
 	         // 
-	        this.annotate("Login Performance Glitch user Test..");
+	        this.annotate("Login LoginLockedoutUser user Test..");
 	        Boolean returnedvaluelockedout = page.LoginLockedoutUser("locked_out_user", "secret_sauce");
 	        
 	        this.annotate("Asserting the test: Login LoginLockedoutUser user Test: result");
@@ -131,6 +131,33 @@ public class WebDemoTest extends TestBase {
 	        
 	             
 	    }
+	
+
+	@Test(dataProvider = "hardCodedBrowsers")
+	    public void LoginProblemUser(String browser, String version, String os, Method method)
+	            throws MalformedURLException, InvalidElementStateException, UnexpectedException {
+	    	
+	    	Boolean value = true;
+
+	        //create webdriver session
+	        this.createDriver(browser, version, os, method.getName());
+	        WebDriver driver = this.getWebDriver();
+
+	        this.annotate("Visiting sauce labs demo page...");
+	        WebDemoPage page = WebDemoPage.visitPage(driver);
+	        
+	       
+	         // 
+	        this.annotate("Login ProblemUser user Test..");
+	        Boolean returnedvaluelockedout = page. LoginProblemUser("problem_user", "secret_sauce");
+	        
+	        this.annotate("Asserting the test: Login ProblemUser user Test: result");
+	        Assert.assertEquals(value, returnedvaluelockedout);
+	        
+	             
+	    }
+
+
 
 
 
