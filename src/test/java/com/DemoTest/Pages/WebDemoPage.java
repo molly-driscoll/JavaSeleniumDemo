@@ -202,9 +202,12 @@ if(driver.getPageSource().contains("Logout")){
     	Thread.sleep(delay);
     	LoginButton.click();
     	
+    	/**
     	System.out.printf("\nClick on Hamburger icon");   
     	Thread.sleep(delay);
     	hamburgericon.click();
+    	
+    	**/
     	
     	System.out.printf("\nPerforming validation");   
     	Thread.sleep(delay);
