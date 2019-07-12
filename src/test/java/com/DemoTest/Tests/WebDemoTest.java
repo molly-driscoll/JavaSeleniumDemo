@@ -83,8 +83,31 @@ public class WebDemoTest extends TestBase {
 	    }
 	    
 	    
+	 @Test(dataProvider = "hardCodedBrowsers")
+	    public void LoginLockedoutUser(String browser, String version, String os, Method method)
+	            throws MalformedURLException, InvalidElementStateException, UnexpectedException {
+	    	
+	    	Boolean value = true;
 
-	 /**
+	        //create webdriver session
+	        this.createDriver(browser, version, os, method.getName());
+	        WebDriver driver = this.getWebDriver();
+
+	        this.annotate("Visiting sauce labs demo page...");
+	        WebDemoPage page = WebDemoPage.visitPage(driver);
+	        
+	       
+	         // 
+	        this.annotate("Login Performance Glitch user Test..");
+	        Boolean returnedvaluelockedout = page.LoginLockedoutUser("locked_out_user", "secret_sauce");
+	        
+	        this.annotate("Asserting the test: Login LoginLockedoutUser user Test: result");
+	        Assert.assertEquals(value, returnedvaluelockedout);
+	        
+	             
+	    }
+
+	 
 	@Test(dataProvider = "hardCodedBrowsers")
 	    public void LoginPerfGlitchUser(String browser, String version, String os, Method method)
 	            throws MalformedURLException, InvalidElementStateException, UnexpectedException {
@@ -108,7 +131,7 @@ public class WebDemoTest extends TestBase {
 	        
 	             
 	    }
-**/
+
 
 
 
