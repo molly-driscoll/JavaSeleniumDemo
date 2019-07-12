@@ -213,7 +213,7 @@ if(driver.getPageSource().contains("Logout")){
     	Thread.sleep(delay);
     	
     	
-    	if(driver.getPageSource().contains("Epic sadface: Sorry, this user has been locked out.")){
+    	if(driver.getPageSource().contains("Epic sadface:")){
     		
     		System.out.println("\nLogin Locked out User Passed");
     		value = true;
