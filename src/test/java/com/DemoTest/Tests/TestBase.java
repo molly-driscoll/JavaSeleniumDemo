@@ -155,7 +155,7 @@ public  class TestBase  {
         capabilities.setCapability("extendedDebugging", true);
       //  capabilities.setCapability("name", method);
         capabilities.setCapability("tags", "Smoke_Test");
-        
+        capabilities.setCapability("tags", "Regression_Test");
       
     	
 

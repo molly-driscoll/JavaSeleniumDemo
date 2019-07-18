@@ -12,9 +12,8 @@
     <classes>
       <class name="com.DemoTest.Tests.WebDemoTest">
         <methods>
-          <include name="Loginother" invocation-numbers="9"/>
           <include name="tearDown"/>
-          <include name="Login"/>
+          <include name="LoginLinux"/>
         </methods>
       </class> <!-- com.DemoTest.Tests.WebDemoTest -->
     </classes>
