@@ -5,6 +5,8 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
 
 ### Environment Setup
 
+Test
+
 1. Global Dependencies
     * [Install Maven](https://maven.apache.org/install.html)
     * Or Install Maven with [Homebrew](http://brew.sh/)
