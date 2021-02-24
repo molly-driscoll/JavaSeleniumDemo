@@ -176,8 +176,6 @@ public  class TestBase  {
         String id = ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
         sessionId.set(id);
     }
-	String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s", sessionId, System.getenv("JOB_NAME"));
-       System.out.println(message);
     
 
     protected void createDriverlinux(String browser, String version, String os, String methodName)
